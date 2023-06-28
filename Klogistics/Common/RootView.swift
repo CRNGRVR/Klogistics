@@ -12,7 +12,11 @@ struct RootView: View {
     
     var body: some View {
         switch rootModel.current {
-        case .onboarding: EmptyView()
+        case .onboarding: OnboardingView(r: rootModel)
+            
+        default: EmptyView()
         }
+        
+        
     }
 }

@@ -10,6 +10,15 @@
 		2C1E77192A4B63D1008D2E88 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E77182A4B63D0008D2E88 /* Screens.swift */; };
 		2C1E771B2A4B63F5008D2E88 /* RootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E771A2A4B63F5008D2E88 /* RootModel.swift */; };
 		2C1E771D2A4B64C3008D2E88 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1E771C2A4B64C3008D2E88 /* Launch Screen.storyboard */; };
+		2C8D888A2A4C0B010090C2F5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D88892A4C0B010090C2F5 /* OnboardingView.swift */; };
+		2C8D888C2A4C0B0B0090C2F5 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D888B2A4C0B0B0090C2F5 /* OnboardingModel.swift */; };
+		2C8D88902A4C0E4E0090C2F5 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D888F2A4C0E4E0090C2F5 /* OnboardingItem.swift */; };
+		2C8D88962A4C10BF0090C2F5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D88932A4C10BF0090C2F5 /* Roboto-Bold.ttf */; };
+		2C8D88972A4C10BF0090C2F5 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D88942A4C10BF0090C2F5 /* Roboto-Medium.ttf */; };
+		2C8D88982A4C10BF0090C2F5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D88952A4C10BF0090C2F5 /* Roboto-Regular.ttf */; };
+		2C8D889A2A4C10D30090C2F5 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D88992A4C10D30090C2F5 /* FontHelper.swift */; };
+		2C8D889D2A4C19D80090C2F5 /* IndcatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D889C2A4C19D80090C2F5 /* IndcatorView.swift */; };
+		2C8D88A02A4C20DC0090C2F5 /* relative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D889F2A4C20DC0090C2F5 /* relative.swift */; };
 		2CE8C8D82A4B60980057AD50 /* KlogisticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8C8D72A4B60980057AD50 /* KlogisticsApp.swift */; };
 		2CE8C8DA2A4B60980057AD50 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8C8D92A4B60980057AD50 /* RootView.swift */; };
 		2CE8C8DC2A4B609A0057AD50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE8C8DB2A4B609A0057AD50 /* Assets.xcassets */; };
@@ -20,6 +29,16 @@
 		2C1E77182A4B63D0008D2E88 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
 		2C1E771A2A4B63F5008D2E88 /* RootModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootModel.swift; sourceTree = "<group>"; };
 		2C1E771C2A4B64C3008D2E88 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2C8D88892A4C0B010090C2F5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		2C8D888B2A4C0B0B0090C2F5 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		2C8D888F2A4C0E4E0090C2F5 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
+		2C8D88932A4C10BF0090C2F5 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		2C8D88942A4C10BF0090C2F5 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		2C8D88952A4C10BF0090C2F5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		2C8D88992A4C10D30090C2F5 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
+		2C8D889B2A4C115E0090C2F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C8D889C2A4C19D80090C2F5 /* IndcatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndcatorView.swift; sourceTree = "<group>"; };
+		2C8D889F2A4C20DC0090C2F5 /* relative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = relative.swift; sourceTree = "<group>"; };
 		2CE8C8D42A4B60980057AD50 /* Klogistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klogistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE8C8D72A4B60980057AD50 /* KlogisticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlogisticsApp.swift; sourceTree = "<group>"; };
 		2CE8C8D92A4B60980057AD50 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -41,8 +60,55 @@
 		2C1E77172A4B6318008D2E88 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2C8D888E2A4C0DC40090C2F5 /* LogIn */,
+				2C8D888D2A4C0DBE0090C2F5 /* SignUp */,
+				2C8D88882A4C0AEF0090C2F5 /* Onboarding */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		2C8D88882A4C0AEF0090C2F5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2C8D88892A4C0B010090C2F5 /* OnboardingView.swift */,
+				2C8D888B2A4C0B0B0090C2F5 /* OnboardingModel.swift */,
+				2C8D888F2A4C0E4E0090C2F5 /* OnboardingItem.swift */,
+				2C8D889C2A4C19D80090C2F5 /* IndcatorView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2C8D888D2A4C0DBE0090C2F5 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		2C8D888E2A4C0DC40090C2F5 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		2C8D88922A4C0F850090C2F5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2C8D88932A4C10BF0090C2F5 /* Roboto-Bold.ttf */,
+				2C8D88942A4C10BF0090C2F5 /* Roboto-Medium.ttf */,
+				2C8D88952A4C10BF0090C2F5 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2C8D889E2A4C20C00090C2F5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2C8D88992A4C10D30090C2F5 /* FontHelper.swift */,
+				2C8D889F2A4C20DC0090C2F5 /* relative.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2CE8C8CB2A4B60980057AD50 = {
@@ -81,13 +147,16 @@
 		2CE8C8E82A4B61B60057AD50 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2C8D889E2A4C20C00090C2F5 /* Helpers */,
+				2C8D889B2A4C115E0090C2F5 /* Info.plist */,
+				2C8D88922A4C0F850090C2F5 /* Fonts */,
 				2C1E77182A4B63D0008D2E88 /* Screens.swift */,
+				2CE8C8D92A4B60980057AD50 /* RootView.swift */,
 				2C1E771A2A4B63F5008D2E88 /* RootModel.swift */,
 				2CE8C8D72A4B60980057AD50 /* KlogisticsApp.swift */,
-				2CE8C8D92A4B60980057AD50 /* RootView.swift */,
 				2CE8C8DB2A4B609A0057AD50 /* Assets.xcassets */,
-				2CE8C8DD2A4B609A0057AD50 /* Preview Content */,
 				2C1E771C2A4B64C3008D2E88 /* Launch Screen.storyboard */,
+				2CE8C8DD2A4B609A0057AD50 /* Preview Content */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -150,8 +219,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8D88982A4C10BF0090C2F5 /* Roboto-Regular.ttf in Resources */,
+				2C8D88972A4C10BF0090C2F5 /* Roboto-Medium.ttf in Resources */,
 				2C1E771D2A4B64C3008D2E88 /* Launch Screen.storyboard in Resources */,
 				2CE8C8DF2A4B609A0057AD50 /* Preview Assets.xcassets in Resources */,
+				2C8D88962A4C10BF0090C2F5 /* Roboto-Bold.ttf in Resources */,
 				2CE8C8DC2A4B609A0057AD50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,8 +237,14 @@
 			files = (
 				2C1E77192A4B63D1008D2E88 /* Screens.swift in Sources */,
 				2CE8C8DA2A4B60980057AD50 /* RootView.swift in Sources */,
+				2C8D889A2A4C10D30090C2F5 /* FontHelper.swift in Sources */,
+				2C8D889D2A4C19D80090C2F5 /* IndcatorView.swift in Sources */,
+				2C8D888C2A4C0B0B0090C2F5 /* OnboardingModel.swift in Sources */,
 				2CE8C8D82A4B60980057AD50 /* KlogisticsApp.swift in Sources */,
+				2C8D88902A4C0E4E0090C2F5 /* OnboardingItem.swift in Sources */,
+				2C8D888A2A4C0B010090C2F5 /* OnboardingView.swift in Sources */,
 				2C1E771B2A4B63F5008D2E88 /* RootModel.swift in Sources */,
+				2C8D88A02A4C20DC0090C2F5 /* relative.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +376,7 @@
 				DEVELOPMENT_TEAM = N5Q5NU635P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Klogistics/Common/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
@@ -328,7 +406,7 @@
 				DEVELOPMENT_TEAM = N5Q5NU635P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Klogistics/Common/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";

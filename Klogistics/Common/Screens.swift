@@ -9,4 +9,6 @@ import Foundation
 
 enum Screens {
     case onboarding
+    case signUp
+    case logIn
 }
