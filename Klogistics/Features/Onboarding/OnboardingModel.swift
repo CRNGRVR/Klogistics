@@ -19,10 +19,27 @@ class OnboardingModel: ObservableObject {
     }
     
     
-    func fill() {}
-    func next() {}
+    func fill() {
+        queue.append(OnboardingItem(title: "Quick Delivery At Your Doorstep", descr: "Enjoy quick pick-up and delivery to your destination", image: "b1"))
+        queue.append(OnboardingItem(title: "Flexible Payment", descr: "Different modes of payment either before and after delivery without stress", image: "b2"))
+        queue.append(OnboardingItem(title: "Real-time Tracking", descr: "Track your packages/items from the comfort of your home till final destination", image: "b3"))
+    }
+    
+    func next() {
+        queue.remove(at: 0)
+        
+        if queue.count == 1 {
+            isShowLogin = true
+        }
+    }
+    
     func skip() {}
     
-    func signUp() {}
+    func signUp() {
+        if queue.count == 1 {
+            rootModel.current = .signUp
+        }
+    }
+    
     func signIn() {}
 }

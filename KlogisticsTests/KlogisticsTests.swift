@@ -71,7 +71,7 @@ final class KlogisticsTests: XCTestCase {
     func testMoveIfQueueNon_Empty() {
         onboardingModel.signUp()
         
-        let assert = onboardingModel.rootModel.current == .signUp
+        let assert = onboardingModel.rootModel.current != .signUp   //  Тут при копировании забыл условие поменять, так что будет сразу в комите GREEN
         XCTAssert(assert)
     }
     
