@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct IndcatorView: View {
-    var model: OnboardingModel
+    @ObservedObject var model: OnboardingModel
     
     var body: some View {
         HStack(spacing: 9) {

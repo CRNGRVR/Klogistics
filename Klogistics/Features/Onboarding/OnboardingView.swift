@@ -25,11 +25,13 @@ struct OnboardingView: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color("Blue"))
                 .padding(.bottom, 17)
+                .padding([.leading, .trailing], 60)
                 .layoutPriority(1)
             
             Text(onboardingModel.queue.first?.descr ?? "")
                 .font(.custom(Roboto.regular.rawValue, size: 16))
                 .multilineTextAlignment(.center)
+                .padding([.leading, .trailing], 50)
                 .layoutPriority(1)
         
             Spacer()

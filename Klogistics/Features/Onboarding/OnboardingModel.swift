@@ -27,6 +27,7 @@ class OnboardingModel: ObservableObject {
     
     func next() {
         queue.remove(at: 0)
+        activeTab += 1
         
         if queue.count == 1 {
             isShowLogin = true
