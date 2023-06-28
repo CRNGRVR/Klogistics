@@ -14,44 +14,50 @@ struct OnboardingView: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             Spacer()
-
             Image(onboardingModel.queue.first?.image ?? "")
-
+                
             
+            Spacer()
+                .frame(maxHeight: 50)
             Text(onboardingModel.queue.first?.title ?? "")
+                .frame(height: 60, alignment: .center)
                 .font(.custom(Roboto.bold.rawValue, size: 24))
-                .multilineTextAlignment(.center)
                 .foregroundColor(Color("Blue"))
-                .padding(.bottom, 17)
+                .multilineTextAlignment(.center)
+                .padding(.bottom, 5)
                 .padding([.leading, .trailing], 60)
-                .layoutPriority(1)
-            
+             
+              
             Text(onboardingModel.queue.first?.descr ?? "")
+                .frame(height: 60, alignment: .top)
                 .font(.custom(Roboto.regular.rawValue, size: 16))
                 .multilineTextAlignment(.center)
-                .padding([.leading, .trailing], 50)
-                .layoutPriority(1)
-        
+                .padding([.leading, .trailing], 44)
+            
+                
+
             Spacer()
                 .frame(maxHeight: 49)
             
             IndcatorView(model: onboardingModel)
-    
-            Spacer()
-                .frame(maxHeight: 82)
-        
-            if onboardingModel.isShowLogin {
-                signUpButtons
-            } else {
-                skipNextButtons
-            }
-            
             
             Spacer()
                 .frame(maxHeight: 70)
-           
+            
+            if onboardingModel.isShowLogin {
+                signUpButtons
+                    
+            } else {
+                skipNextButtons
+                    
+            }
+                
+            // 70 47
+            Spacer()
+                .frame(maxHeight: onboardingModel.isShowLogin ? 47 : 70)
+                
         }
         .ignoresSafeArea(.all)
     }
