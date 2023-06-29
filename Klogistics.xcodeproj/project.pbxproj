@@ -20,6 +20,7 @@
 		2C8D889D2A4C19D80090C2F5 /* IndcatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D889C2A4C19D80090C2F5 /* IndcatorView.swift */; };
 		2C8D88A02A4C20DC0090C2F5 /* relative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D889F2A4C20DC0090C2F5 /* relative.swift */; };
 		2C8D88A82A4C2DFD0090C2F5 /* KlogisticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D88A72A4C2DFD0090C2F5 /* KlogisticsTests.swift */; };
+		2C943F692A4DB985009C76EE /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2C943F682A4DB985009C76EE /* Supabase */; };
 		2CE8C8D82A4B60980057AD50 /* KlogisticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8C8D72A4B60980057AD50 /* KlogisticsApp.swift */; };
 		2CE8C8DA2A4B60980057AD50 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8C8D92A4B60980057AD50 /* RootView.swift */; };
 		2CE8C8DC2A4B609A0057AD50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE8C8DB2A4B609A0057AD50 /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C943F692A4DB985009C76EE /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +227,9 @@
 			dependencies = (
 			);
 			name = Klogistics;
+			packageProductDependencies = (
+				2C943F682A4DB985009C76EE /* Supabase */,
+			);
 			productName = Klogistics;
 			productReference = 2CE8C8D42A4B60980057AD50 /* Klogistics.app */;
 			productType = "com.apple.product-type.application";
@@ -257,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 2CE8C8CB2A4B60980057AD50;
+			packageReferences = (
+				2C943F672A4DB985009C76EE /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = 2CE8C8D52A4B60980057AD50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -568,6 +576,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C943F672A4DB985009C76EE /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C943F682A4DB985009C76EE /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C943F672A4DB985009C76EE /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CE8C8CC2A4B60980057AD50 /* Project object */;
 }
