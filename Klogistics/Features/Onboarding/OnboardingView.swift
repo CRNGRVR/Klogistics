@@ -17,10 +17,10 @@ struct OnboardingView: View {
         VStack(spacing: 0) {
             Spacer()
             Image(onboardingModel.queue.first?.image ?? "")
-                
             
             Spacer()
                 .frame(maxHeight: 50)
+            
             Text(onboardingModel.queue.first?.title ?? "")
                 .frame(height: 60, alignment: .center)
                 .font(.custom(Roboto.bold.rawValue, size: 24))

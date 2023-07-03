@@ -11,4 +11,7 @@ enum Screens {
     case onboarding
     case signUp
     case logIn
+    case forgotPassword
+    case verify
+    case newPass
 }

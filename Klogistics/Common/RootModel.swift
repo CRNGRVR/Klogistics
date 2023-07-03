@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
 class RootModel: ObservableObject {
     @Published var current: Screens = .onboarding
+    
+    @Published var colorMode: ColorScheme = .light
 }

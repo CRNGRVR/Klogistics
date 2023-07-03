@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct KlogisticsApp: App {
+    @ObservedObject var rootModel = RootModel()
+    
     var body: some Scene {
         WindowGroup {
-            RootView()
+            RootView(rootModel: rootModel)
+                .preferredColorScheme(rootModel.colorMode)
         }
     }
 }

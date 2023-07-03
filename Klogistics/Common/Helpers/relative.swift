@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-func relative(_ pixels: CGFloat, _ axis: axis) -> CGFloat{
+func relative(_ pixels: CGFloat, _ axis: axis) -> CGFloat {
 
     let layout_width: CGFloat = 390
     let layout_height: CGFloat = 844
