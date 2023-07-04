@@ -19,12 +19,12 @@ struct ForgotPasswordView: View {
                 .padding(.top, relative(110, .h))
                 .padding(.bottom, relative(48, .h))
             
-            tf(text: .constant(""), descr: "Email Address", placeholder: "***********@mail.com")
+            tf(text: $model.mail, descr: "Email Address", placeholder: "***********@mail.com")
                 .padding(.bottom, relative(64, .h))
             
-            BlueButton(action: {}, text: "Send OTP")
+            BlueButton(action: {model.send()}, text: "Send OTP")
             
-            underBlue(descr: "Remember password? Back to ", buttonLabel: "Sign in", action: {})
+            underBlue(descr: "Remember password? Back to ", buttonLabel: "Sign in", action: {model.remember()})
             
             Spacer()
         }

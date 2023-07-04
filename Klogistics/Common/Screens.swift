@@ -14,4 +14,5 @@ enum Screens {
     case forgotPassword
     case verify
     case newPass
+    case main
 }

@@ -89,7 +89,7 @@ struct SignUpView: View {
             Spacer()
                 .frame(maxHeight: 64)
             
-            BlueButton(action: {}, text: "Sign Up")
+            BlueButton(action: {model.signUp()}, text: "Sign Up")
                 .padding(.bottom, 8)
             
             underBlue(descr: "Already have an account?", buttonLabel: "Sign in", action: {model.signIn()})

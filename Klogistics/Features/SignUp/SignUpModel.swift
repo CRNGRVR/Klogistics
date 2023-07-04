@@ -55,5 +55,19 @@ class SignUpModel: ObservableObject {
         rootModel.current = .logIn
     }
     
-    func signUp() {}
+    func signUp() {
+        print("tap")
+        
+        if isAgree {
+            print("agree")
+            Task {
+                print("task start")
+                await SupabaseSingle.shared.signUp(name: name, phone: phone, mail: mail, password: password) {
+                    print("Signed up!")
+                    self.rootModel.current = .logIn
+                }
+                print("task finished")
+            }
+        }
+    }
 }

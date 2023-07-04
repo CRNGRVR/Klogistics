@@ -21,30 +21,30 @@ struct VerifyView: View {
             
             HStack {
                 Group {
-                    digit(num: .constant(""))
+                    digit(num: $model.d1)
                     Spacer()
-                    digit(num: .constant(""))
+                    digit(num: $model.d2)
                     Spacer()
-                    digit(num: .constant(""))
+                    digit(num: $model.d3)
                 }
                 
                 Spacer()
                 
                 Group {
-                    digit(num: .constant(""))
+                    digit(num: $model.d4)
                     Spacer()
-                    digit(num: .constant(""))
+                    digit(num: $model.d5)
                     Spacer()
-                    digit(num: .constant(""))
+                    digit(num: $model.d6)
                 }
             }
             .padding([.leading, .trailing], 24)
             
             
-            underBlue(descr: "If you didn’t receive code, ", buttonLabel: "Resend", action: {})
+            underBlue(descr: "If you didn’t receive code, ", buttonLabel: "Resend", action: {model.resend()})
                 .padding(.bottom, relative(84, .h))
             
-            BlueButton(action: {}, text: "Set New Password")
+            BlueButton(action: {model.goToSetNew()}, text: "Set New Password")
             
             Spacer()
         }

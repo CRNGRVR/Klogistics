@@ -19,10 +19,10 @@ struct LogInView: View {
                 .padding(.top, relative(110, .h))
                 .padding(.bottom, relative(48, .h))
             
-            tf(text: .constant(""), descr: "Email Address", placeholder: "***********@mail.com")
+            tf(text: $model.mail, descr: "Email Address", placeholder: "***********@mail.com")
                 .padding(.bottom, relative(24, .h))
             
-            PasswordField(text: .constant(""), descr: "Password", placeholder: "**********")
+            PasswordField(text: $model.password, descr: "Password", placeholder: "**********")
             
             HStack {
                 Checkbox(isChecked: .constant(false))
@@ -32,10 +32,9 @@ struct LogInView: View {
                     .font(.custom(Roboto.medium.rawValue, size: 12))
                     .foregroundColor(.gray)
                     
-                
                 Spacer()
                 
-                Button(action: {}, label: {
+                Button(action: {model.forgotPassword()}, label: {
                     Text("Forgot Password?")
                         .font(.custom(Roboto.medium.rawValue, size: 12))
                 })
@@ -46,9 +45,9 @@ struct LogInView: View {
             Spacer()
                 .frame(maxHeight: 169)
             
-            BlueButton(action: {}, text: "Log in")
+            BlueButton(action: {model.logIn()}, text: "Log in")
             
-            underBlue(descr: "Already have an account?", buttonLabel: "Sign Up", action: {})
+            underBlue(descr: "Already have an account?", buttonLabel: "Sign Up", action: {model.backToSignUp()})
                 .padding(.bottom, relative(30, .h))
             
             google(action: {})

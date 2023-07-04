@@ -12,4 +12,8 @@ class RootModel: ObservableObject {
     @Published var current: Screens = .onboarding
     
     @Published var colorMode: ColorScheme = .light
+    
+    
+    //  Forgot -> Verify/NewPass
+    var forgotVerify_mail = ""
 }

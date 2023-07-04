@@ -7,7 +7,7 @@
 
 import Foundation
 import Supabase
-
+import GoTrue
 
 struct SupabaseSingle {
     static let shared = SupabaseSingle()
@@ -39,10 +39,8 @@ struct SupabaseSingle {
     
     func signUp(name: String, phone: String, mail: String, password: String, completion: @escaping () -> Void) async {
         do {
-            Task {
-                try await client.auth.signUp(email: mail, password: password, data: ["name": .string(name), "phone" : .string(phone)])
-                completion()
-            }
+            try await client.auth.signUp(email: mail, password: password, data: ["name": .string(name), "phone" : .string(phone)])
+            completion()
         } catch {
             print(error.localizedDescription)
         }
@@ -53,7 +51,6 @@ struct SupabaseSingle {
             try await client.auth.signIn(email: mail, password: password)
             onSucces()
         } catch {
-            print(error.localizedDescription)
             onFault(error)
         }
     }
@@ -76,5 +73,12 @@ struct SupabaseSingle {
         }
     }
     
-    
+    func setNewPassword(newPassword: String, onSuccess success: @escaping () -> Void, onFault fault: @escaping (Error) -> Void) async {
+        do {
+            try await client.auth.update(user: .init(password: newPassword))
+            success()
+        } catch {
+            fault(error)
+        }
+    }
 }

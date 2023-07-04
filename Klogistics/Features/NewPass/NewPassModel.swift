@@ -13,5 +13,18 @@ class NewPassModel: ObservableObject {
         self.rootModel = r
     }
     
+    @Published var newPass = ""
+    @Published var conformition = ""
     
+    func setNew() {
+        if newPass == conformition {
+            Task {
+                await SupabaseSingle.shared.setNewPassword(newPassword: newPass, onSuccess: {
+                    self.rootModel.current = .main
+                }, onFault: { err in
+                    print(err.localizedDescription)
+                })
+            }
+        }
+    }
 }

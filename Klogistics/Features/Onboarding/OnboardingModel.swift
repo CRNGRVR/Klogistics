@@ -42,5 +42,7 @@ class OnboardingModel: ObservableObject {
         }
     }
     
-    func signIn() {}
+    func signIn() {
+        rootModel.current = .logIn
+    }
 }

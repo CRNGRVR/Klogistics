@@ -13,7 +13,21 @@ class ForgotPasswordModel: ObservableObject {
         self.rootModel = r
     }
     
+    @Published var mail = ""
+    
     func remember() {
         rootModel.current = .logIn
+    }
+    
+    func send() {
+        Task {
+            rootModel.forgotVerify_mail = mail
+            
+            await SupabaseSingle.shared.signInVithOTP(mail: mail, onSuccess: {
+                self.rootModel.current = .verify
+            }, onFault: {err in
+                print(err.localizedDescription)
+            })
+        }
     }
 }
