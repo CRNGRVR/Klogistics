@@ -81,4 +81,16 @@ struct SupabaseSingle {
             fault(error)
         }
     }
+    
+    
+    func downloadAllImages() async{
+        do {
+            let files = try await client.storage.from(id: "Document").list(path: "ad/")
+            for item in files {
+                print(item)
+            }
+        } catch {
+            
+        }
+    }
 }

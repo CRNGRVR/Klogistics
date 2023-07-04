@@ -12,4 +12,3 @@ enum Roboto: String {
     case medium = "Roboto-Medium"
     case regular = "Roboto-Regular"
 }
-
