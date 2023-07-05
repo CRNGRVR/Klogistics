@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var homeModel: HomeModel
+    init(m: MainRootModel) {
+        homeModel = HomeModel(m: m)
+    }
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
@@ -222,6 +227,6 @@ struct qButton: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(m: MainRootModel(r: RootModel()))
     }
 }

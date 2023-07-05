@@ -9,4 +9,9 @@ import Foundation
 
 enum MainScreens {
     case home
+    case wallet
+    case track
+    case profile
+    
+    case notification
 }

@@ -21,7 +21,7 @@ struct RootView: View {
         case .forgotPassword: ForgotPasswordView(r: rootModel)
         case .verify: VerifyView(r: rootModel)
         case .newPass: NewPassView(r: rootModel)
-        
+        case .main: MainRootView(r: rootModel)
         default: supabase_testView()
         }
     }
