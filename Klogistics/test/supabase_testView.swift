@@ -77,7 +77,8 @@ struct supabase_testView: View {
                 }
             
                 .sheet(isPresented: $model.showKniga, content: {
-                    PDFViewRepresentable(data: model.dataOfKniga!)
+                    //PDFViewRepresentable(data: model.dataOfKniga!)
+                    PDFByLinkViewRepresentable(url: getPdfUrl(name: "1")!)
                 })
                 
                 

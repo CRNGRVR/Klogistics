@@ -204,10 +204,10 @@ class Supabase_testModel: ObservableObject {
         Task {
             do {
                 url = try client.auth.getOAuthSignInURL(provider: .google, redirectTo: URL(string: "https://ctndmzopmnohfkgjwlmo.supabase.co/auth/v1/callback"))
-                
-                DispatchQueue.main.async {
+                print(url?.absoluteString)
+               // DispatchQueue.main.async {
                     self.isShowSafari.toggle()
-                }
+                //}
                 
                 print("done")
             } catch {
@@ -217,10 +217,13 @@ class Supabase_testModel: ObservableObject {
     }
     
     func getKniga() {
-        Task {
-            dataOfKniga = await SupabaseSingle.shared.downloadBook()
-            showKniga = true
-        }
+//        Task {
+//            dataOfKniga = await SupabaseSingle.shared.downloadBook()
+//            showKniga = true
+//        }
+        
+        
+        showKniga.toggle()
     }
 }
 
@@ -232,4 +235,13 @@ struct UserData: Encodable, Decodable {
     let name: String?
     let phone: String?
     let age: Int?
+}
+
+
+func getPdfUrl(name: String) -> URL? {
+    if let url = Bundle.main.url(forResource: "1", withExtension: "pdf") {
+        return url
+    }
+    
+    return nil
 }

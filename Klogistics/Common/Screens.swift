@@ -15,4 +15,6 @@ enum Screens {
     case verify
     case newPass
     case main
+    
+    case e
 }

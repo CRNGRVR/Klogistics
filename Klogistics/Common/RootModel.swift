@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class RootModel: ObservableObject {
-    @Published var current: Screens = .main // .onboarding
+    @Published var current: Screens = .e//.main // .onboarding
     
     @Published var colorMode: ColorScheme = .light
     

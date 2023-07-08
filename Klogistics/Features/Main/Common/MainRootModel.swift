@@ -14,6 +14,9 @@ class MainRootModel: ObservableObject {
     }
     
     @Published var current: MainScreens = .home
+    @Published var topbar = Topbar()
+    
+    
     
     @Published var isShowTabbar = true
     @Published var activeTab: Tabs = .Home

@@ -16,6 +16,7 @@ struct WebView: UIViewRepresentable {
     func makeUIView(context: Context) -> some UIView {
         let wk = WKWebView()
         let req = URLRequest(url: url)
+        wk.customUserAgent = "fgjhkiguhk"
         wk.load(req)
         return wk
     }

@@ -45,6 +45,8 @@
 		2C943F8E2A52B802009C76EE /* SupabaseSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C943F8D2A52B802009C76EE /* SupabaseSingle.swift */; };
 		2C943F902A52BCA0009C76EE /* PDFViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C943F8F2A52BCA0009C76EE /* PDFViewRepresentable.swift */; };
 		2C943F922A52C6B4009C76EE /* PasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C943F912A52C6B4009C76EE /* PasswordField.swift */; };
+		2C9525FA2A570D3F00896240 /* Topbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9525F92A570D3F00896240 /* Topbar.swift */; };
+		2C9525FC2A5870AF00896240 /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C9525FB2A5870AF00896240 /* 1.pdf */; };
 		2CE402552A5313A30009E97C /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE402542A5313A30009E97C /* LogInView.swift */; };
 		2CE402572A5313AB0009E97C /* LogInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE402562A5313AB0009E97C /* LogInModel.swift */; };
 		2CE402592A5314370009E97C /* TitleSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE402582A5314370009E97C /* TitleSubtitle.swift */; };
@@ -114,6 +116,8 @@
 		2C943F8D2A52B802009C76EE /* SupabaseSingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseSingle.swift; sourceTree = "<group>"; };
 		2C943F8F2A52BCA0009C76EE /* PDFViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewRepresentable.swift; sourceTree = "<group>"; };
 		2C943F912A52C6B4009C76EE /* PasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordField.swift; sourceTree = "<group>"; };
+		2C9525F92A570D3F00896240 /* Topbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topbar.swift; sourceTree = "<group>"; };
+		2C9525FB2A5870AF00896240 /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
 		2CE402542A5313A30009E97C /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		2CE402562A5313AB0009E97C /* LogInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInModel.swift; sourceTree = "<group>"; };
 		2CE402582A5314370009E97C /* TitleSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitle.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				2C3043912A53F2AD00B6C9A9 /* MainRootView.swift */,
 				2C3043932A53F2B800B6C9A9 /* MainRootModel.swift */,
 				2C3043952A53F31500B6C9A9 /* MainScreens.swift */,
+				2C9525F92A570D3F00896240 /* Topbar.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -272,14 +277,14 @@
 			path = KlogisticsTests;
 			sourceTree = "<group>";
 		};
-		2C943F6A2A4DDE7C009C76EE /* supabase_test */ = {
+		2C943F6A2A4DDE7C009C76EE /* test */ = {
 			isa = PBXGroup;
 			children = (
 				2C943F6B2A4DDE95009C76EE /* supabase_testView.swift */,
 				2C943F6D2A4DDEA2009C76EE /* supabase_testModel.swift */,
 				2C943F8A2A528A06009C76EE /* WebKitView.swift */,
 			);
-			path = supabase_test;
+			path = test;
 			sourceTree = "<group>";
 		};
 		2C943F752A509ECD009C76EE /* Components */ = {
@@ -299,6 +304,14 @@
 				2C3043A82A547ADF00B6C9A9 /* topBar.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2C9525FD2A5871B900896240 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C9525FB2A5870AF00896240 /* 1.pdf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		2CE4024F2A52CE9F0009E97C /* LogIn */ = {
@@ -358,7 +371,7 @@
 		2CE8C8D62A4B60980057AD50 /* Klogistics */ = {
 			isa = PBXGroup;
 			children = (
-				2C943F6A2A4DDE7C009C76EE /* supabase_test */,
+				2C943F6A2A4DDE7C009C76EE /* test */,
 				2C1E77172A4B6318008D2E88 /* Features */,
 				2CE8C8E82A4B61B60057AD50 /* Common */,
 			);
@@ -384,6 +397,7 @@
 				2C1E771A2A4B63F5008D2E88 /* RootModel.swift */,
 				2CE8C8D72A4B60980057AD50 /* KlogisticsApp.swift */,
 				2C943F8D2A52B802009C76EE /* SupabaseSingle.swift */,
+				2C9525FD2A5871B900896240 /* Resources */,
 				2C8D889B2A4C115E0090C2F5 /* Info.plist */,
 				2CE8C8DB2A4B609A0057AD50 /* Assets.xcassets */,
 				2C1E771C2A4B64C3008D2E88 /* Launch Screen.storyboard */,
@@ -489,6 +503,7 @@
 			files = (
 				2C8D88982A4C10BF0090C2F5 /* Roboto-Regular.ttf in Resources */,
 				2C8D88972A4C10BF0090C2F5 /* Roboto-Medium.ttf in Resources */,
+				2C9525FC2A5870AF00896240 /* 1.pdf in Resources */,
 				2C1E771D2A4B64C3008D2E88 /* Launch Screen.storyboard in Resources */,
 				2C943F802A51E2A9009C76EE /* Localizable.strings in Resources */,
 				2CE8C8DF2A4B609A0057AD50 /* Preview Assets.xcassets in Resources */,
@@ -523,6 +538,7 @@
 				2C3043A92A547ADF00B6C9A9 /* topBar.swift in Sources */,
 				2C8D889A2A4C10D30090C2F5 /* FontHelper.swift in Sources */,
 				2C943F922A52C6B4009C76EE /* PasswordField.swift in Sources */,
+				2C9525FA2A570D3F00896240 /* Topbar.swift in Sources */,
 				2CE402632A5327F60009E97C /* VerifyView.swift in Sources */,
 				2C943F6E2A4DDEA2009C76EE /* supabase_testModel.swift in Sources */,
 				2CE402692A532AD70009E97C /* NewPassView.swift in Sources */,
